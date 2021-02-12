@@ -1,0 +1,8 @@
+{
+  "Values": {
+    "CosmosCoreAPIUri": "{connectionURL}",
+    "CosmosCoreAccessKey": "{accessKey}",
+    "CosmosDatabaseName": "product_data",
+    "ProductAPIServiceURL": "http://contosoretailproductmanager"
+  }
+}

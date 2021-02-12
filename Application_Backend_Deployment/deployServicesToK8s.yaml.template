@@ -1,0 +1,168 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+ name: contosoretailuserprofile
+spec:
+  replicas: 1
+  selector:
+   matchLabels:
+    app: profile
+  template:
+   metadata:
+    labels:
+     app: profile 
+   spec:
+    containers:
+    - name: profile 
+      image: {acrname}.azurecr.io/microsoft/contosoretail/userprofile
+      ports:
+      - containerPort: 80
+        name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: contosoretailproductmanager
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: productmanager
+ template:
+  metadata:
+   labels:
+    app: productmanager
+  spec:
+    containers:
+    - name: productmanager
+      image: {acrname}.azurecr.io/microsoft/contosoretail/productapi
+
+      ports:
+      - containerPort: 80
+        name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: contosoretailpurchasehistory
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: purchasehistory
+ template:
+  metadata:
+   labels:
+    app: purchasehistory
+  spec:
+    containers:
+    - name: purchasehistory
+      image: {acrname}.azurecr.io/microsoft/contosoretail/purchasehistory
+
+      ports:
+      - containerPort: 80
+        name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: contosoretailrecommendationbyuser
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: recommendationbyuser
+ template:
+  metadata:
+   labels:
+    app: recommendationbyuser
+  spec:
+    containers:
+    - name: recommendationbyuser
+      image: {acrname}.azurecr.io/microsoft/contosoretail/recommendationbyuser
+
+      ports:
+      - containerPort: 80
+        name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: contosoretailrecommendationbyitem
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: recommendationbyitem
+ template:
+  metadata:
+   labels:
+    app: recommendationbyitem
+  spec:
+    containers:
+    - name: recommendationbyitem
+      image: {acrname}.azurecr.io/microsoft/contosoretail/recommendationbyitem
+
+      ports:
+      - containerPort: 80
+        name: http                        
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: contosoretailuserprofile
+spec:
+    type: ClusterIP
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: profile
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: contosoretailproductmanager
+spec:
+    type: ClusterIP
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: productmanager
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: contosoretailpurchasehistory
+spec:
+    type: ClusterIP
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: purchasehistory
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: contosoretailrecommendationbyuser
+spec:
+    type: ClusterIP
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: recommendationbyuser
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: contosoretailrecommendationbyitem
+spec:
+    type: ClusterIP
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: recommendationbyitem

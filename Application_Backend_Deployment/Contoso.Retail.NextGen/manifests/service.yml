@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: contosoretailuserprofile
+spec:
+    type: ClusterIP
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: profile
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: contosoretailproductmanager
+spec:
+    type: ClusterIP
+    ports:
+        - port: 80
+          name: http
+    selector:
+        app: productmanager

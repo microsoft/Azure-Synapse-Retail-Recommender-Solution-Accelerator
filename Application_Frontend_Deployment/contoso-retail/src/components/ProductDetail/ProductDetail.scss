@@ -1,0 +1,97 @@
+/* Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License. */
+   
+#ProductDetail {
+    position: relative;
+    animation: detailAnimation 500ms cubic-bezier(0.77, 0, 0.175, 1) 250ms 1 forwards;
+    perspective: 500px;
+    transform: scale3d(0, 0, 1);
+    transform-origin: bottom center;
+
+
+    .navigationBack {
+        padding: 20px;
+        font: 500 14px/19px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        a {
+            color: #556AE5;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    .detailImage,
+    .detailImage > img {
+        -moz-border-radius-topleft: 20px;
+        -moz-border-radius-topright: 20px;
+        -webkit-border-top-left-radius: 20px;
+        -webkit-border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .product-name {
+        font: normal 20px/27px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        color: #323130;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .brand-name {
+        font: normal 14px/19px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        color: #6C797D;
+        margin: 0 0 20px;
+    }
+
+    h3 {
+        font: normal 20px/27px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        color: #323130;
+        margin: 0 20px;
+    }
+
+    .product-description {
+        font: normal 14px/19px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        color: #323130;
+        margin: 0 20px;
+    }
+    .price-area{ 
+        margin: 20px 0;
+    }
+
+    #priceDetail {
+        display: flex;
+        width: 100%;
+        margin: 10px 20px 60px;
+
+        > div {
+            width: 50%;
+        }
+        .price {
+            font: normal 32px/43px 'Segoe UI', Arial, Helvetica, sans-serif !important;
+            letter-spacing: 0px;
+            color: #16181A;
+        }
+        .price > sup {
+            font-size: calc(32px / 2);
+            line-height: calc(43px / 2);
+        }
+        > div:last-of-type {
+            padding-top: 5px;
+            text-align: right;
+        }
+    }
+
+}
+
+@keyframes detailAnimation {
+    from {
+        transform: scale3d(0, 0, 1);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}

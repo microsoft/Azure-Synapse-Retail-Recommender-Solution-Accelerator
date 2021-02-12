@@ -1,0 +1,65 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
+$storageAccountName = "{storageaccount}"
+$cosmosDBName = "{cosmosdbname}"
+$resourceGroupName = "{resourcegroup}"
+$serviceEndpoint = "{serviceendpoint}"
+
+#$connectionString = az cosmosdb keys list --type connection-strings --name $cosmosDBName --resource-group $resourceGroupName --query "connectionStrings[?contains(description, 'Primary MongoDB Connection String')].[connectionString]" -o tsv
+#Write-Host "Cosmos DB connectionString  : $connectionString"
+
+$storageAccountKey = az storage account keys list -g $resourceGroupName -n $storageAccountName --query "[?keyName == 'key1'].value" -o tsv
+Write-Host "Storage Account key : $storageAccountKey"
+
+az storage container create --name "product" `
+    --account-name $storageAccountName `
+    --account-key $storageAccountKey `
+    --public-access container
+
+#Upload product images
+Write-Host "Uploading Product Images"
+az storage blob upload-batch -d product --account-key $storageAccountKey --account-name $storageAccountName -s .\Data\Images\product
+
+#Get Service Endpoint
+$productAPI = "https://$serviceEndpoint/product/ContosoRetail/Products"
+$profileAPI = "https://$serviceEndpoint/profile/ContosoRetail/Users"
+
+#Post Profile Data
+$profile = (Get-Content -path .\Data\profile.json -Raw)
+$profile = ConvertFrom-Json $profile
+
+Write-Host "Post Profile Data"
+foreach ($user in $profile) { 
+    $profileObj  = [pscustomobject]@{ userID = $user.userID; name = $user.name; profileImageURL = $user.profileImageURL }
+    $profileJson = $profileObj | ConvertTo-Json
+
+    Write-Host $profileJson
+    Invoke-WebRequest $profileAPI -Method 'POST' -Body $profileJson -Headers @{'Content-Type' = 'application/json; charset=utf-8'}
+}
+
+Write-Host "Profile Data posted successfully."
+
+#Post Product Data
+Write-Host "Post Product Data"
+$products = (Get-Content -path .\Data\products.json -Raw)
+$products = ConvertFrom-Json $products
+
+Write-Host "Post Product Data"
+foreach ($product in $products) { 
+    $productObj  = [pscustomobject]@{ productID = $product.productID; `
+                                        productCategory = $product.productCategory; `
+                                        brand = $product.brand; `
+                                        name = $product.name; `
+                                        price = $product.price; `
+                                        imageURL = $product.imageURL; `
+                                        description = $product.description }
+    
+    $productJson = $productObj | ConvertTo-Json
+
+    Write-Host $productJson
+    Invoke-WebRequest $productAPI -Method 'POST' -Body $productJson -Headers @{'Content-Type' = 'application/json; charset=utf-8'}
+}
+
+Write-Host "This is the Storage Account Name used for the application frontend deployment : " + $storageAccountName
+Write-Host "Product Data posted successfully."

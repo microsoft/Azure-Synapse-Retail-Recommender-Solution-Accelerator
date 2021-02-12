@@ -1,0 +1,79 @@
+/* Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License. */
+
+#ProductDetail {
+
+    .navigationBack {
+        padding: 20px;
+        font: 500 14px/19px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        a {
+            color: #556AE5;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    .detailImage,
+    .detailImage > img {
+        -moz-border-radius-topleft: 20px;
+        -moz-border-radius-topright: 20px;
+        -webkit-border-top-left-radius: 20px;
+        -webkit-border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .product-name {
+        font: normal 20px/27px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        color: #323130;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .brand-name {
+        font: normal 14px/19px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        color: #6C797D;
+        margin: 0 0 20px;
+    }
+
+    h3 {
+        font: normal 20px/27px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        color: #323130;
+        margin: 0 20px;
+    }
+
+    table.ordertracking {
+        width: 100%;
+        border: 0 none;
+        margin-bottom: 10pt;
+
+        thead {
+            background: #F3F2F1 0% 0% no-repeat padding-box;
+            th {
+                text-align: left;
+                padding: 5px 20px;
+                width: 50%;
+                font: 500 12px/16px 'Segoe UI', Arial, Helvetica, sans-serif;
+                letter-spacing: 0px;
+                color: #323130;
+            }
+        }
+        
+        td {
+            text-align: left;
+            padding: 5px 20px;
+            font: lighter 12px/16px 'Segoe UI', Arial, Helvetica, sans-serif;
+            letter-spacing: 0px;
+            color: #323130;
+        }
+
+        th, td {
+            border-bottom: 1px solid #F3F2F1;
+          }
+    }
+
+}

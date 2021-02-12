@@ -1,0 +1,7 @@
+{
+  "Values": {
+    "MLserviceUrl": "{RecommendMLServiceURL}",
+    "ProductAPIServiceURL": "http://contosoretailproductmanager",
+    "MLServiceBearerToken": "{RecommendMLServiceBearerToken}"
+  }
+}

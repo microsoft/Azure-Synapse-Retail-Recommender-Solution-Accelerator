@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "c5c07c0a-5c4e-4fd8-9af0-7e7f4d284f2c",
+		"name": "ContosoRetail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create New User Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"{{UserName}}\",\r\n  \"profileImageURL\": \"{{ProfileImageURL}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UserProfileServiceEndpoint}}/ContosoRetail/Users",
+					"host": [
+						"{{UserProfileServiceEndpoint}}"
+					],
+					"path": [
+						"ContosoRetail",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"96e31e9d-a37c-4b37-978d-9f035133ed69\",\r\n    \"name\": \"{{UpdatedUserName}}\",\r\n    \"profileImageURL\": \"http://contoso/profile.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UserProfileServiceEndpoint}}/ContosoRetail/Users/96e31e9d-a37c-4b37-978d-9f035133ed69",
+					"host": [
+						"{{UserProfileServiceEndpoint}}"
+					],
+					"path": [
+						"ContosoRetail",
+						"Users",
+						"96e31e9d-a37c-4b37-978d-9f035133ed69"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User Profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UserProfileServiceEndpoint}}/ContosoRetail/Users",
+					"host": [
+						"{{UserProfileServiceEndpoint}}"
+					],
+					"path": [
+						"ContosoRetail",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User Profile",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"brand\": \"MSFT\",\r\n  \"name\": \"{{$randomAbbreviation}}\",\r\n  \"price\": {{$randomPrice}},\r\n  \"imageURL\": \"{{$randomAbstractImage}}\",\r\n  \"description\": \"{{$randomCatchPhraseAdjective}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ProductManagerServiceEndpoint}}/ContosoRetail/Products/",
+					"host": [
+						"{{ProductManagerServiceEndpoint}}"
+					],
+					"path": [
+						"ContosoRetail",
+						"Products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"e31ed1dc-f23c-4211-aa9e-3e816ae23112\",\r\n    \"brand\": \"MSFT\",\r\n    \"name\": \"COM\",\r\n    \"price\": {{$randomPrice}},\r\n    \"imageURL\": \"http://lorempixel.com/640/480/abstract\",\r\n    \"description\": \"Multi-layered\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ProductManagerServiceEndpoint}}/ContosoRetail/Products/",
+					"host": [
+						"{{ProductManagerServiceEndpoint}}"
+					],
+					"path": [
+						"ContosoRetail",
+						"Products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ProductManagerServiceEndpoint}}/ContosoRetail/Products/",
+					"host": [
+						"{{ProductManagerServiceEndpoint}}"
+					],
+					"path": [
+						"ContosoRetail",
+						"Products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{ProductManagerServiceEndpoint}}/ContosoRetail/Products/{{ProductID}}",
+					"host": [
+						"{{ProductManagerServiceEndpoint}}"
+					],
+					"path": [
+						"ContosoRetail",
+						"Products",
+						"{{ProductID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductsByCategoryName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ProductManagerServiceEndpoint}}/ContosoRetail/Products/GetProductsByCategory?CategoryName=Electronics",
+					"host": [
+						"{{ProductManagerServiceEndpoint}}"
+					],
+					"path": [
+						"ContosoRetail",
+						"Products",
+						"GetProductsByCategory"
+					],
+					"query": [
+						{
+							"key": "CategoryName",
+							"value": "Electronics"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductsByProductIDs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "e8001a11-42d3-4ea2-b813-e43f4325fa5f",
+			"key": "ProfileServiceEndpoint",
+			"value": "http://52.156.147.224/",
+			"type": "string"
+		},
+		{
+			"id": "0cfbc018-1306-48ac-81dd-700c56b69353",
+			"key": "ProductManagerServiceEndpoint",
+			"value": "http://52.156.97.92/",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

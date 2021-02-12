@@ -1,0 +1,41 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: contoso-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$2  
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+    - hosts:
+      - {servicedns}
+      secretName: "contosoretail"
+  backend:
+    serviceName: contosoretailuserprofile
+    servicePort: 80
+  rules:
+  - host: {servicedns}
+    http:
+      paths:
+      - backend:
+          serviceName: contosoretailuserprofile
+          servicePort: 80
+        path: /profile(/|$)(.*)
+      - backend:
+          serviceName: contosoretailproductmanager
+          servicePort: 80
+        path: /product(/|$)(.*)
+      - backend:
+          serviceName: contosoretailpurchasehistory
+          servicePort: 80
+        path: /purchasehistory(/|$)(.*)
+      - backend:
+          serviceName: contosoretailrecommendationbyuser
+          servicePort: 80
+        path: /recommendationbyuser(/|$)(.*)
+      - backend:
+          serviceName: contosoretailrecommendationbyitem
+          servicePort: 80
+        path: /recommendationbyitem(/|$)(.*)

@@ -1,0 +1,41 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+ name: contosoretailuserprofile
+spec:
+  replicas: 1
+  selector:
+   matchLabels:
+    app: profile
+  template:
+   metadata:
+    labels:
+     app: profile 
+   spec:
+    containers:
+    - name: profile 
+      image: contosoretail.azurecr.io/contosoretailuserprofile
+      ports:
+      - containerPort: 80
+        name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: contosoretailproductmanager
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   app: productmanager
+ template:
+  metadata:
+   labels:
+    app: productmanager
+  spec:
+    containers:
+    - name: productmanager
+      image: contosoretail.azurecr.io/contosoretailproductmanager
+      ports:
+      - containerPort: 80
+        name: http

@@ -1,0 +1,19 @@
+{
+    "name": "clickstream_sink_json",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "insert_data_lake_name",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "folderPath": "synapse/workspaces/clickstream/new",
+                "fileSystem": "insert_filesystem_name"
+            }
+        }
+    },
+    "type": "Microsoft.Synapse/workspaces/datasets"
+}

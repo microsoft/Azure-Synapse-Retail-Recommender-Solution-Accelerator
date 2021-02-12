@@ -1,0 +1,69 @@
+{
+    "name": "clickstream_source_avro",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "data_lake_name",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Avro",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "folderPath": "clickstream_data_location",
+                "fileSystem": "clickstream_filsystem_name"
+            }
+        },
+        "schema": {
+            "type": "record",
+            "name": "Microsoft.ServiceBus.Messaging.EventData",
+            "fields": [
+                {
+                    "name": "SequenceNumber",
+                    "type": "long"
+                },
+                {
+                    "name": "Offset",
+                    "type": "string"
+                },
+                {
+                    "name": "EnqueuedTimeUtc",
+                    "type": "string"
+                },
+                {
+                    "name": "SystemProperties",
+                    "type": {
+                        "type": "map",
+                        "values": [
+                            "long",
+                            "double",
+                            "string",
+                            "bytes"
+                        ]
+                    }
+                },
+                {
+                    "name": "Properties",
+                    "type": {
+                        "type": "map",
+                        "values": [
+                            "long",
+                            "double",
+                            "string",
+                            "bytes",
+                            "null"
+                        ]
+                    }
+                },
+                {
+                    "name": "Body",
+                    "type": [
+                        "null",
+                        "bytes"
+                    ]
+                }
+            ]
+        }
+    },
+    "type": "Microsoft.Synapse/workspaces/datasets"
+}

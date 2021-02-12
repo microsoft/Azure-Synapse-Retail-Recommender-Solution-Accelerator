@@ -1,0 +1,117 @@
+/* Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License. */
+   
+header {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+}
+#LogoHeader {
+    width: 80px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 5pt;
+}
+.menu-button {
+    padding: 25px;
+}
+#cart,
+#loginpersona {
+    padding: 7px 0;
+}
+
+#cartitems {
+    position: absolute;
+    padding: 2pt 10px 4px;
+    font-size: 8px;
+    color: white;
+    border-radius: 20px;
+    z-index: 10;
+    background-color: #556AE5;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;   
+    letter-spacing: 0px; 
+    font-weight: bold;
+    margin-left: -29px;
+    margin-top: 26px;
+    text-align: center;
+    display: none;
+}
+#loginpersona {
+    margin-right: 10pt;
+}
+main {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+h2 {
+    font: Bold 16px/21px 'Segoe UI', Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    color: #16181A;
+    margin: 20px 20px 0;
+}
+.header-label {
+    text-align: left;
+    font: Bold 16px 'Segoe UI', Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    color: #323130;
+    line-height: 50px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 380px) {
+    .header-label {
+        max-width: 90px;
+    }
+}
+
+.footer-links {
+    margin: auto 20px;
+}
+.footer-image {
+    text-align: center;
+    margin: 5pt;
+}
+
+footer {
+    padding: 60px 0 20px;
+}
+
+footer a {
+    letter-spacing: 0px;
+    color: #6C797D;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:active {
+    color: #6C797D;
+}
+/** Mobile overrides **/
+
+@media only screen
+and (min-width: 768px) {
+    .footer-links {
+        width: 700px;
+        margin: auto;
+    }
+    .product-panel {
+        width: 45vw !important;
+    }
+    .product-panel > img,
+    .product-panel .ms-Image {
+        height: calc(155px + 20vh);
+    }
+    .stack-wrapper.hero .product-panel {
+        width: 90vw !important;
+    }
+    
+    .stack-wrapper.hero .product-panel .ms-Image  {
+        height: 260px;
+    }
+}

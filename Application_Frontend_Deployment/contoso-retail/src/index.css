@@ -1,0 +1,48 @@
+/* Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License. */
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh;
+}
+
+.App > main {
+    overflow-x: hidden;
+    margin-top: 50px;
+}
+
+div[role="tablist"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+#menupanel {
+  margin-top: 30px;
+}
+
+#demopanel {
+  position: absolute;
+  bottom: 50px;
+}
+#menupanel a,
+#demopanel a {
+  text-decoration: none;
+  color: black;
+}
+
+#menupanel a:hover,
+#demopanel a:hover {
+  text-decoration: none;
+  color: #556AE5;
+}
+
+#loginpersona > a {
+  text-decoration: none !important;
+}

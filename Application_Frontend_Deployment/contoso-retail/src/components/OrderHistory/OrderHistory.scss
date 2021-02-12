@@ -1,0 +1,32 @@
+/* Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License. */
+
+#OrderHistory {
+    margin: 20px;
+
+    h1 {
+        font: normal 20px/48px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0;
+        color: #16181A;
+    }
+    h2 {
+        margin-bottom: 6px;
+    }
+
+    .ms-Image {
+        background-color: lightgrey;
+    }
+
+    .order-item {
+        padding: 10px 5px 0;
+        border-top: 1pt solid #F3F2F1;
+        cursor: pointer;
+        transition: background-color 500ms ease-out;
+    }
+    .order-item:last-of-type {
+        border-bottom: 1pt solid #F3F2F1;
+    }
+    .order-item:hover {
+        background-color: #eeeeee;
+    }
+}

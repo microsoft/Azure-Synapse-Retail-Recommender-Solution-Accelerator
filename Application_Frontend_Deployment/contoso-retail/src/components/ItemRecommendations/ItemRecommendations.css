@@ -1,0 +1,129 @@
+/* Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License. */
+   
+/** Product panels **/
+.product-panel {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 4px #2E30331A;
+    border-radius: 4px;
+    opacity: 1;
+    width: 150px;
+    padding-bottom: 10px;
+}
+.product-panel:last-of-type {
+    margin-right: 20px;
+}
+
+.product-panel > .product-details {
+    margin: 10px;
+}
+
+.product-panel > img,
+.product-panel .ms-Image,
+.product-panel .shimmer-image {
+    height: 101px;
+    width: 100%;
+    border: 0 none;
+    background-color: #f3f2f1;
+}
+
+.product-name {
+    font: normal 12px/16px 'Segoe UI', Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    color: #323130;
+}
+.stack-wrapper.item-recommendations {
+    padding: 20px 0;
+}
+.catagory-details {
+    padding: 0 10px 10px 10px;
+}
+.catagory-details > .catagory-name {
+    font: Bold 10px/14px 'Segoe UI', Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    color: #556AE5;
+}
+
+.catagory-details > p {
+    font: normal 14px/19px 'Segoe UI', Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    color: #16181A;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.brand-name {
+    font: normal 10px/14px 'Segoe UI', Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    color: #6C797D;
+    margin-bottom: 10px;
+    user-select: none;
+}
+.price-area {
+    width: 100%;
+    display: flex;
+}
+.price {
+    flex: 2;
+    font: normal 21px/28px 'Segoe UI', Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    color: #16181A;
+}
+.price > sup {
+    font-size: calc(21px / 2);
+    line-height: calc(28px / 2);
+}
+
+.add-to-cart-btn {
+    flex: 1;
+    border: 0 none transparent;
+    width: 32px;
+    height: 28px;
+    background: #556AE5 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+.add-to-cart-btn:hover,
+.add-to-cart-btn:active {
+    background: rgb(42, 61, 167) 0% 0% no-repeat padding-box;
+}
+.add-to-cart-btn > i {
+    user-select: none;
+}
+.stack-wrapper.stack-vertical .product-panel {
+    margin-right: auto;
+    width: 90vw !important;
+}
+/** Mobile overrides **/
+
+@media only screen and (max-width: 767px) {
+    .product-panel {
+        width: 140px !important;
+    }
+}
+
+@media only screen
+and (min-width: 768px) {
+    .footer-links {
+        width: 700px;
+        margin: auto;
+    }
+    .product-panel {
+        width: 43vw !important;
+    }
+    .product-panel > img,
+    .product-panel .ms-Image,
+    .product-panel .shimmer-image {
+        height: calc(101px + 20vh);
+    }
+    .stack-wrapper.hero .product-panel {
+        width: 90vw !important;
+    }
+    .stack-wrapper.hero .product-panel > img  {
+        height: calc(260px + 35vh);
+    }
+}

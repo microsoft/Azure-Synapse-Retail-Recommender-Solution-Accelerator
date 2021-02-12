@@ -1,0 +1,29 @@
+/* Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License. */
+   
+#UserSelect {
+    margin: 20px;
+
+    h1 {
+        margin-top: 0;
+        font: normal 20px/48px 'Segoe UI', Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        color: #16181A;
+    }
+
+    .user-item {
+        display: flex;
+        border-top: 1pt solid #F3F2F1;
+        text-decoration: none;
+        padding: 10pt 5pt;
+        transition: background-color 600ms ease-out;
+        cursor: pointer;
+    }
+    .user-item:last-of-type {
+        border-bottom: 1pt solid #F3F2F1;
+    }
+
+    .user-item:hover {
+        background-color: #F3F2F1;
+    }
+}

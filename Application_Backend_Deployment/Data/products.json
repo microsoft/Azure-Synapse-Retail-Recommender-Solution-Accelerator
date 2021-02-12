@@ -1,0 +1,782 @@
+[
+    {
+        "id": "31333f77-3b1b-48db-80e8-f1624eb2c20b",
+        "productID": "1802037",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 74.99,
+        "imageURL": "headphones B&W.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "49e4eee0-e333-4bfc-b8d8-c0105e05acec",
+        "productID": "4804055",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 74.99,
+        "imageURL": "headphones B&W.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "e1549f70-63c0-445a-a3ca-0a1b673dc518",
+        "productID": "4804057",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 94.99,
+        "imageURL": "headphones shower pink.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "ada37ba2-e6b2-4fcb-9d67-ad5134a58fa2",
+        "productID": "3700926",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 94.99,
+        "imageURL": "headphones shower pink.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "38f8c09d-9189-4cbf-a5ce-3cff8c02af83",
+        "productID": "3700927",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 74.99,
+        "imageURL": "headphones shower pink.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "dd15f57f-3067-4888-844b-8031de823d62",
+        "productID": "3700928",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 74.99,
+        "imageURL": "headphones silver.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "a105e3a0-a6cd-4663-b0bd-d0b7f9296ce8",
+        "productID": "3700929",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 74.99,
+        "imageURL": "headphones yellow.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "e7149f18-2a2e-4275-89b2-d9386ec70a29",
+        "productID": "3701134",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "mPhone",
+        "price": 74.99,
+        "imageURL": "mPhone wood table.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "6b3c3d21-ccd2-499f-b9ae-240347f718d2",
+        "productID": "1004781",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Contoso Xoom",
+        "price": 74.99,
+        "imageURL": "phone on bike.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "b74cd774-0c74-4fe7-b692-189cf63a07d3",
+        "productID": "1003310",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Contoso Duo",
+        "price": 74.99,
+        "imageURL": "phones and laptop.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "fd2ab25c-cc1e-4739-99c3-5f0fe3e5a766",
+        "productID": "4804295",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "SNY-123-NYMB12",
+        "price": 74.99,
+        "imageURL": "speaker.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "e9c9c2df-dab2-4442-89b2-652330413921",
+        "productID": "4804926",
+        "productCategory": "Electronics",
+        "brand": "Microsoft",
+        "name": "Surface Pro 7",
+        "price": 1957.99,
+        "imageURL": "surface black.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "8edb5d12-3be3-4666-8ab2-ab961248ec15",
+        "productID": "3700748",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Orange Chair",
+        "price": 88.42,
+        "imageURL": "chair orange.jpg",
+        "description": ""
+    },
+    {
+        "id": "34aa8e57-608d-4e17-9fad-70808dac43df",
+        "productID": "4804056",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Globe Black",
+        "price": 38.42,
+        "imageURL": "globe black.jpg",
+        "description": ""
+    },
+    {
+        "id": "168ef4b1-d87f-4752-b329-07fd3c94debf",
+        "productID": "1004856",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Grey Chair",
+        "price": 121.42,
+        "imageURL": "grey chair.jpg",
+        "description": ""
+    },
+    {
+        "id": "30e7542e-8114-4a60-a272-92c86c7e0727",
+        "productID": "3600661",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Grey Couch",
+        "price": 271.42,
+        "imageURL": "grey couch.jpg",
+        "description": ""
+    },
+    {
+        "id": "b209baa9-cb77-4138-9469-6b058842c4ee",
+        "productID": "4804718",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Modern Kitchen (Package)",
+        "price": 4719.42,
+        "imageURL": "kitchen modern 1.jpg",
+        "description": ""
+    },
+    {
+        "id": "fa38b097-9ace-4eef-835e-c0c8d120fd0a",
+        "productID": "3300349",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Modern Kitchen - Coffee (Package)",
+        "price": 4719.42,
+        "imageURL": "kitchen modern 2.jpg",
+        "description": ""
+    },
+    {
+        "id": "899fb9eb-8570-4e74-ac3a-90356853f210",
+        "productID": "1004901",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Bronze Lamp",
+        "price": 39.42,
+        "imageURL": "lamp bronze.jpg",
+        "description": ""
+    },
+    {
+        "id": "868005bf-c4eb-4d0e-9b00-83d278710e03",
+        "productID": "5100816",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Wood Chairs",
+        "price": 239.42,
+        "imageURL": "chairs outdoors.jpg",
+        "description": ""
+    },
+    {
+        "id": "f8317524-9fcb-4bff-a1f2-05040258e2bf",
+        "productID": "1005174",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Grill",
+        "price": 99.42,
+        "imageURL": "grill.jpg",
+        "description": ""
+    },
+    {
+        "id": "7d8c6877-5289-49f0-ad18-ea2ae777451a",
+        "productID": "4804660",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Gardening Tools",
+        "price": 89.42,
+        "imageURL": "tools gardening.jpg",
+        "description": ""
+    },
+    {
+        "id": "5de9fee7-c678-425f-9d88-29c04bbc026c",
+        "productID": "1004785",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Metal Watering Can",
+        "price": 49.42,
+        "imageURL": "watering can.jpg",
+        "description": ""
+    },
+    {
+        "id": "f32fa1f2-c513-49ee-8db5-2aafd54d9fda",
+        "productID": "3700766",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Power Drill - 9V",
+        "price": 129.42,
+        "imageURL": "drill.jpg",
+        "description": ""
+    },
+    {
+        "id": "c56e3995-99d1-4529-a219-af49a7b4d386",
+        "productID": "1801766",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Table Saw",
+        "price": 339.42,
+        "imageURL": "saw.jpg",
+        "description": ""
+    },
+    {
+        "id": "6ad3910e-2cf1-400f-94e2-56d6c4232d2b",
+        "productID": "1002524",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "mPhone wood table",
+        "price": 74.99,
+        "imageURL": "mPhone wood table.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "44731a9d-344f-464c-b7f4-8112b3b2e527",
+        "productID": "1004249",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "mPhone wood table",
+        "price": 74.99,
+        "imageURL": "mPhone wood table.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "d02be437-af6b-475d-96aa-518b5c32671e",
+        "productID": "1801881",
+        "productCategory": "Electronics",
+        "brand": "Microsoft",
+        "name": "Surface Book",
+        "price": 230.99,
+        "imageURL": "surface close-up.jpg",
+        "description": ""
+    },
+    {
+        "id": "cdc83f7f-0d45-49e8-bea9-f015283f4c93",
+        "productID": "1304409",
+        "productCategory": "Electronics",
+        "brand": "Microsoft",
+        "name": "Surface Book",
+        "price": 230.99,
+        "imageURL": "surface close-up.jpg",
+        "description": ""
+    },
+    {
+        "id": "43b0b224-07c8-40fd-9c24-6446193bfcac",
+        "productID": "4804409",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 74.99,
+        "imageURL": "headphones silver.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "aafd5fd1-1cd3-416a-9bf3-244feecc2174",
+        "productID": "1401872",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Rerfrigerators",
+        "price": 474.99,
+        "imageURL": "refrigerator vintage.jpg",
+        "description": ""
+    },
+    {
+        "id": "76c41e8f-e0cb-429d-aa16-7b8d4acb47e9",
+        "productID": "5100601",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Contoso Duo",
+        "price": 74.99,
+        "imageURL": "phones and laptop.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "26c4150d-9c4f-47fe-84d9-530ae570beb9",
+        "productID": "4804295",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "SNY-123-NYMB12",
+        "price": 74.99,
+        "imageURL": "speaker.jpg",
+        "description": ""
+    },
+    {
+        "id": "2f574274-e979-452c-8852-6311952cdb82",
+        "productID": "1004566",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Contoso Xoom",
+        "price": 74.99,
+        "imageURL": "phone on bike.jpg",
+        "description": ""
+    },
+    {
+        "id": "da179664-9e22-4c23-8740-8d81dcf2835d",
+        "productID": "1801704",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 74.99,
+        "imageURL": "headphones B&W.jpg",
+        "description": ""
+    },
+    {
+        "id": "2d1a59bf-352c-4152-b5aa-0e109e52e24f",
+        "productID": "8800773",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Headphones",
+        "price": 94.99,
+        "imageURL": "headphones shower pink.jpg",
+        "description": "  <p>Earphones, charging case, ear tips with four size options, USB-A to USB-C charging cable, Quick Start guide, warranty card</p>\r\n                        <ul>\r\n                            <li>Studio-grade, high-performance earphones</li>\r\n                            <li>Up to 9 hours of listening time (more than 24 hours with charging case)</li>\r\n                            <li>Adjustable, secure-fit ear hooks for lightweight comfort and stability</li>\r\n                            <li>Reinforced design for sweat & water resistance during tough workouts or running</li>\r\n                            <li>Volume & track controls on each earbud, voice capability, and auto play/pause</li>\r\n                        </ul>"
+    },
+    {
+        "id": "72ab381e-adb6-4748-92c1-d8f1fc728e16",
+        "productID": "1005115",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "mPhone wood table",
+        "price": 74.99,
+        "imageURL": "mPhone wood table.jpg",
+        "description": ""
+    },
+    {
+        "id": "35fceb33-1706-44cd-9465-35e0a6b0ab94",
+        "productID": "1002633",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Contoso Duo",
+        "price": 74.99,
+        "imageURL": "phones and laptop.jpg",
+        "description": ""
+    },
+    {
+        "id": "77f771f5-b707-4f8d-b1f3-efd637652b41",
+        "productID": "1004886",
+        "productCategory": "Electronics",
+        "brand": "Microsoft",
+        "name": "Surface Pro 7",
+        "price": 1957.99,
+        "imageURL": "surface black.jpg",
+        "description": ""
+    },
+    {
+        "id": "cfd28cb2-b3f6-4e72-806a-d65bf036508e",
+        "productID": "1005008",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "SNY-123-NYMB12",
+        "price": 74.99,
+        "imageURL": "speaker.jpg",
+        "description": ""
+    },
+    {
+        "id": "33a12dbc-3cbc-4e81-8e9d-3b6c80fd9b37",
+        "productID": "1004872",
+        "productCategory": "Electronics",
+        "brand": "Contoso",
+        "name": "Contoso Xoom",
+        "price": 74.99,
+        "imageURL": "phone on bike.jpg",
+        "description": ""
+    },
+    {
+        "id": "539f44ac-ca1d-442e-9399-49b1c54d8313",
+        "productID": "100005472",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Orange Chair",
+        "price": 88.42,
+        "imageURL": "chair orange.jpg",
+        "description": ""
+    },
+    {
+        "id": "567adebd-d8a6-461e-9b45-48d9fc96352c",
+        "productID": "1004839",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Globe Black",
+        "price": 38.42,
+        "imageURL": "globe black.jpg",
+        "description": ""
+    },
+    {
+        "id": "c36905e9-1097-404d-ba4c-6c2fdbacc019",
+        "productID": "3701387",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Grey Chair",
+        "price": 121.42,
+        "imageURL": "grey chair.jpg",
+        "description": ""
+    },
+    {
+        "id": "7abd781e-44a9-4d37-8615-eca454f18c8c",
+        "productID": "3701387",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Grey Chair",
+        "price": 121.42,
+        "imageURL": "grey chair.jpg",
+        "description": ""
+    },
+    {
+        "id": "433358f7-5531-4542-96a5-33c9b580972a",
+        "productID": "1005204",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Grey Couch",
+        "price": 271.42,
+        "imageURL": "grey couch.jpg",
+        "description": ""
+    },
+    {
+        "id": "3eb74377-2e9a-41c2-823e-49bdb9e01097",
+        "productID": "5100337",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Modern Kitchen (Package)",
+        "price": 4719.42,
+        "imageURL": "kitchen modern 1.jpg",
+        "description": ""
+    },
+    {
+        "id": "c4177e6a-3b0f-4f78-91cf-32015c2fdc0e",
+        "productID": "1801806",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Modern Kitchen - Coffee (Package)",
+        "price": 4719.42,
+        "imageURL": "kitchen modern 2.jpg",
+        "description": ""
+    },
+    {
+        "id": "7c3ada2a-ad3e-45e5-8727-90c3f69b3b46",
+        "productID": "1005221",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Bronze Lamp",
+        "price": 39.42,
+        "imageURL": "lamp bronze.jpg",
+        "description": ""
+    },
+    {
+        "id": "5657ef42-05e4-42a7-94a4-be5b0088d10a",
+        "productID": "1005159",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Rerfrigerators",
+        "price": 474.99,
+        "imageURL": "refrigerator vintage.jpg",
+        "description": ""
+    },
+    {
+        "id": "a9f16dfb-567e-4cbc-9132-55e02e5b5b04",
+        "productID": "1002544",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Orange Chair",
+        "price": 88.42,
+        "imageURL": "chair orange.jpg",
+        "description": ""
+    },
+    {
+        "id": "f16d848b-0b36-4260-bea9-a0e4379632ae",
+        "productID": "1005186",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Globe Black",
+        "price": 38.42,
+        "imageURL": "globe black.jpg",
+        "description": ""
+    },
+    {
+        "id": "47c6e47b-032b-4c32-af7e-c043f0d469f4",
+        "productID": "1004833",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Grey Chair",
+        "price": 121.42,
+        "imageURL": "grey chair.jpg",
+        "description": ""
+    },
+    {
+        "id": "fa0b76e4-16e6-4b8f-b9ad-f0d6b498016a",
+        "productID": "100013980",
+        "productCategory": "Home",
+        "brand": "Contoso",
+        "name": "Bronze Lamp",
+        "price": 39.42,
+        "imageURL": "lamp bronze.jpg",
+        "description": ""
+    },
+    {
+        "id": "b11e2613-f4b1-4b3b-a3e9-6b5c771cfdc7",
+        "productID": "1004767",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Power Drill - 9V",
+        "price": 129.42,
+        "imageURL": "drill.jpg",
+        "description": ""
+    },
+    {
+        "id": "ae3518a8-5d0d-4095-bd4a-58e8bfd4a0dc",
+        "productID": "1801690",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Table Saw",
+        "price": 339.42,
+        "imageURL": "saw.jpg",
+        "description": ""
+    },
+    {
+        "id": "6b6364a1-834e-40e3-b722-d23ad6074267",
+        "productID": "1005100",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Drill",
+        "price": 339.42,
+        "imageURL": "drill.jpg",
+        "description": ""
+    },
+    {
+        "id": "78cf4263-8594-4701-85a1-5a80ecf926c6",
+        "productID": "1004449",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Screws",
+        "price": 10.42,
+        "imageURL": "screws.jpg",
+        "description": ""
+    },
+    {
+        "id": "f9cb8db8-a604-469f-9b02-8e93f251778a",
+        "productID": "1307377",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Office supplies",
+        "price": 10.42,
+        "imageURL": "office supplies.jpg",
+        "description": ""
+    },
+    {
+        "id": "508c9a3b-0459-43c4-844c-129b93d7ca80",
+        "productID": "1801805",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Power Drill - 9V",
+        "price": 129.42,
+        "imageURL": "drill.jpg",
+        "description": ""
+    },
+    {
+        "id": "f093e407-5363-416d-8d5b-5767daa32c1c",
+        "productID": "1005132",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Table Saw",
+        "price": 339.42,
+        "imageURL": "saw.jpg",
+        "description": ""
+    },
+    {
+        "id": "67e11528-3ac8-44c2-8e78-fddf2cac3828",
+        "productID": "1004902",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Power Drill - 9V",
+        "price": 129.42,
+        "imageURL": "drill.jpg",
+        "description": ""
+    },
+    {
+        "id": "0f724b22-1b61-4e89-b552-031b3e85f17c",
+        "productID": "1005135",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Table Saw",
+        "price": 339.42,
+        "imageURL": "saw.jpg",
+        "description": ""
+    },
+    {
+        "id": "5be50ac3-e5f5-431a-84c8-774859feabc0",
+        "productID": "1005203",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Drill",
+        "price": 339.42,
+        "imageURL": "drill.jpg",
+        "description": ""
+    },
+    {
+        "id": "b36a49bd-6eba-4b87-af3d-12c815c8d39f",
+        "productID": "3200324",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Screws",
+        "price": 10.42,
+        "imageURL": "screws.jpg",
+        "description": ""
+    },
+    {
+        "id": "8d5871b4-07f0-4acc-be64-cf1d8f00fb2a",
+        "productID": "1005239",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Office supplies",
+        "price": 10.42,
+        "imageURL": "office supplies.jpg",
+        "description": ""
+    },
+    {
+        "id": "a1872f3b-691e-4053-ac2a-1c58f7ce14bb",
+        "productID": "1002099",
+        "productCategory": "Tools_Hardware",
+        "brand": "Contoso",
+        "name": "Screws",
+        "price": 10.42,
+        "imageURL": "screws.jpg",
+        "description": ""
+    },
+    {
+        "id": "ad291eaf-48a9-4073-b199-aef7b1fdc968",
+        "productID": "1003304",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Wood Chairs",
+        "price": 239.42,
+        "imageURL": "chairs outdoors.jpg",
+        "description": ""
+    },
+    {
+        "id": "8e189cc5-f1e9-4272-8f85-cd02cf250356",
+        "productID": "3200549",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Grill",
+        "price": 99.42,
+        "imageURL": "grill.jpg",
+        "description": ""
+    },
+    {
+        "id": "6b7c9058-0f04-4e68-9875-824fb7003fb0",
+        "productID": "26300095",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Gardening Tools",
+        "price": 89.42,
+        "imageURL": "tools gardening.jpg",
+        "description": ""
+    },
+    {
+        "id": "cee25dc1-55ad-4c01-a884-d02d754cd7cf",
+        "productID": "1004243",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Metal Watering Can",
+        "price": 49.42,
+        "imageURL": "watering can.jpg",
+        "description": ""
+    },
+    {
+        "id": "f10eb753-e089-4745-ad9f-02a66ad77d0a",
+        "productID": "1005161",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Wood Chairs",
+        "price": 239.42,
+        "imageURL": "chairs outdoors.jpg",
+        "description": ""
+    },
+    {
+        "id": "ce484ce8-d007-4255-afce-14946bec5443",
+        "productID": "1005253",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Grill",
+        "price": 99.42,
+        "imageURL": "grill.jpg",
+        "description": ""
+    },
+    {
+        "id": "926f8712-0b75-48da-afb5-ed1ebf392348",
+        "productID": "1005164",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Gardening Tools",
+        "price": 89.42,
+        "imageURL": "tools gardening.jpg",
+        "description": ""
+    },
+    {
+        "id": "8289f507-d2cd-44a9-a255-dddb6c199f7f",
+        "productID": "1801849",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Metal Watering Can",
+        "price": 49.42,
+        "imageURL": "watering can.jpg",
+        "description": ""
+    },
+    {
+        "id": "a89f1586-fdc4-4a3b-9050-7f36e0ac5bb0",
+        "productID": "2501301",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Grill",
+        "price": 99.42,
+        "imageURL": "grill.jpg",
+        "description": ""
+    },
+    {
+        "id": "b9550a0a-7d94-4f5c-bb6f-b420587599fa",
+        "productID": "100019218",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Gardening Tools",
+        "price": 89.42,
+        "imageURL": "tools gardening.jpg",
+        "description": ""
+    },
+    {
+        "id": "65dd30e2-9910-4cb9-9f11-c10152f08d7c",
+        "productID": "5100852",
+        "productCategory": "Outdoor Living",
+        "brand": "Contoso",
+        "name": "Wood Chairs",
+        "price": 239.42,
+        "imageURL": "chairs outdoors.jpg",
+        "description": ""
+    }
+]

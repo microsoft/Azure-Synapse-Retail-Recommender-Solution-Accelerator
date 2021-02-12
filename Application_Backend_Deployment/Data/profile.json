@@ -1,0 +1,62 @@
+[
+    {
+        "id": "96e31e9d-a37c-4b37-978d-9f035133ed69",
+        "userID": "597644399",
+        "name": "Darryl",
+        "profileImageURL": "MSC13_Darryl_01.jpg"
+    },
+    {
+        "id": "e6d4c808-5b77-425e-a171-f4a1506324f8",
+        "userID": "569335945",
+        "name": "Everald",
+        "profileImageURL": "MSC13_Everald_02.jpg"
+    },
+    {
+        "id": "f4e4343c-c93d-4dfc-b6c9-29d608adb7be",
+        "userID": "594718064",
+        "name": "Jeremy",
+        "profileImageURL": "MSC13_JeremyA_01.jpg"
+    },
+    {
+        "id": "0eb8ca86-cde5-4e52-baba-ce9e4efaaa90",
+        "userID": "585217863",
+        "name": "Marisa",
+        "profileImageURL": "MSC13_Marisa_03.jpg"
+    },
+    {
+        "id": "4bbe07e2-ff79-4951-b72a-82449e2caa57",
+        "userID": "568793129",
+        "name": "Meena",
+        "profileImageURL": "MSC13_Meena_01.jpg"
+    },
+    {
+        "id": "3660ef12-66ee-4a60-b495-7ad0aff600ae",
+        "userID": "568804062",
+        "name": "Jacquelynn",
+        "profileImageURL": "STB13_Jacquelynn_02.png"
+    },
+    {
+        "id": "97f7e6d3-6d0f-4dae-a13a-6c344324eab5",
+        "userID": "512475445",
+        "name": "Jenn",
+        "profileImageURL": "user profile.jpg"
+    },
+    {
+        "id": "2e555cee-c148-4a49-9137-8d0998d98e5b",
+        "userID": "568778435",
+        "name": "Michelle",
+        "profileImageURL": "STB13_Michelle_02.png"
+    },
+    {
+        "id": "dac1e2f5-8057-4628-ab23-8272b83f1e79",
+        "userID": "568789585",
+        "name": "Kiki",
+        "profileImageURL": "WIN12_Kiki_03.png"
+    },
+    {
+        "id": "4671fa6c-d543-4b8b-ac49-0dfe25539c67",
+        "userID": "568914925",
+        "name": "Wesley",
+        "profileImageURL": "WIN12_Wes_04.png"
+    }
+]

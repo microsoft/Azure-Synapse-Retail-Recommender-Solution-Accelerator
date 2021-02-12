@@ -1,0 +1,29 @@
+{
+    "name": "AvroToJson",
+    "properties": {
+        "description": "Converts Event Hub Capture output (AVRO) to JSON format, saved in ADLS.",
+        "type": "MappingDataFlow",
+        "typeProperties": {
+            "sources": [
+                {
+                    "dataset": {
+                        "referenceName": "clickstream_source_avro",
+                        "type": "DatasetReference"
+                    },
+                    "name": "SourceAvro"
+                }
+            ],
+            "sinks": [
+                {
+                    "dataset": {
+                        "referenceName": "clickstream_sink_json",
+                        "type": "DatasetReference"
+                    },
+                    "name": "SinkJson"
+                }
+            ],
+            "transformations": [],
+            "script": "source(output(\n\t\tSequenceNumber as string,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\twildcardPaths:['contosoretail/clickthorugh/*/*/*/*/*/*/*']) ~> SourceAvro\nSourceAvro sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tpartitionBy('hash', 1),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SinkJson"
+        }
+    }
+}
