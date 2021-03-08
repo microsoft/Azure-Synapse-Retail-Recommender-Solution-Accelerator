@@ -41,8 +41,15 @@ In order to read files from your Azure Storage Account from the Synapse workspac
 4. Click "Add role assignment" 
 5. Now click the Role dropdown and select `Storage Blob Data Contributor` and search for your username and the other user's usernames to be added by using the search bar. 
 6. Click "Save" at the bottom 
+ 
+## Step 3: Upload Assets and Data to the Synapse Workspace 
+### Step 3.1: Add IP address to Firewall
+Before you can upload any assests to the Synapse Workspace you will first need to add your IP address to the Synapse Workspace. 
+1. Go to the Synapse resouce you creaded in the previous step. 
+2. Navigate to "Firewalls" under "Security" on the left hand side of the page. (Add screenshot)
+3. At the top of the screen click "+ Add client IP"
 
-## Step 3: Upload Assets and Data to the Synapse Workspace  
+### Step 3.2: Upload Assets
 1. Launch the Synapse workspace:  
     - Go to the resource page in the portal and click the "Launch Synapse Studio"
 2. Go to "Develop", click the "+", and click Import:  
