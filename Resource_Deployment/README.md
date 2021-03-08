@@ -46,8 +46,9 @@ In order to read files from your Azure Storage Account from the Synapse workspac
 ### Step 3.1: Add IP address to Firewall
 Before you can upload any assests to the Synapse Workspace you will first need to add your IP address to the Synapse Workspace. 
 1. Go to the Synapse resouce you creaded in the previous step. 
-2. Navigate to "Firewalls" under "Security" on the left hand side of the page. (Add screenshot)
+2. Navigate to "Firewalls" under "Security" on the left hand side of the page.
 3. At the top of the screen click "+ Add client IP"
+  - ![Update Firewall](./imgs/Firewall.PNG)  
 4. Your IP address should now be visable in the IP list. 
 
 ### Step 3.2: Upload Assets
