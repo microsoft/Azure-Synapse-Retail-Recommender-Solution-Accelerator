@@ -48,6 +48,7 @@ Before you can upload any assests to the Synapse Workspace you will first need t
 1. Go to the Synapse resouce you creaded in the previous step. 
 2. Navigate to "Firewalls" under "Security" on the left hand side of the page. (Add screenshot)
 3. At the top of the screen click "+ Add client IP"
+4. Your IP address should now be visable in the IP list. 
 
 ### Step 3.2: Upload Assets
 1. Launch the Synapse workspace:  
