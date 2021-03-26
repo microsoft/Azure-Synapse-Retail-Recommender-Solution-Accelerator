@@ -57,3 +57,6 @@ az storage blob upload-batch --destination $file_system --source $file_path --ac
 $cosmos_db_account_name = Read-Host "Azure Cosmos DB Desired Account Name"
 Write-Host "Creating the Azure Cosmos DB"
 az cosmosdb create --name $cosmos_db_account_name --resource-group $resource_group
+
+#adding Tag
+az deployment group create --resource-group $resource_group --subscription $subscriptionId  --template-file .\azuredeploy.json

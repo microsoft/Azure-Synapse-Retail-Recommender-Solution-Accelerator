@@ -221,18 +221,11 @@ class App extends React.Component<IProps, IState> {
           </Stack>
         </Panel>
         <footer>
-          <Stack className="footer-links" horizontal horizontalAlign="space-between">
-            <a href="#"><Text block variant={'small' as ITextProps['variant']}>Privacy &amp; Cookies</Text></a>
-            <a href="#"><Text block variant={'small' as ITextProps['variant']}>Terms Of Use</Text></a>
-            <a href="#"><Text block variant={'small' as ITextProps['variant']}>&copy; Contoso 2020</Text></a>
-          </Stack>
           <div className="footer-image">
-            <a href="http://www.contosoco.com/" target="_blank" rel="noopener noreferrer">
               <img alt="Contoso"
                 id="FooterLogo"
                 src={process.env.PUBLIC_URL + '/assets/contoso.png'}
               />
-            </a>
           </div>
         </footer>
       </div>

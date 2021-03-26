@@ -8,5 +8,4 @@ To use this solution accelerator, you will first need to deploy the following li
 4. Azure Kubernetes Service 
 5. API Management 
 6. Azure Event Hub 
-7. Azure Stream Analytics 
-8. Azure Search
+7. Azure Cosmos DB 
