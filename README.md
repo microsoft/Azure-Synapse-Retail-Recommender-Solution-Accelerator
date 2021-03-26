@@ -1,4 +1,4 @@
-# Azure Synapse Solution Accelerator Retail Recommender
+![Retail Recommender Solution Accelerator](./Resource_Deployment/imgs/RetailRecommender.png)
 
 
 ## About this repository

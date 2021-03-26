@@ -11,7 +11,7 @@ We are using the data provided by [this Kaggle Open Dataset](https://www.kaggle.
 
 
 ## Step 2: Create Azure Synapse Analytics
-In this step you will deploy Azure Synapse Analytics and a Spark Pool in the Synapse workspace, an Azure Data Lake (Gen2) Storage Account and a Cosmos DB Account into your Azure Subscription that you are using for this solution accelerator. 
+In this step you will deploy Azure Synapse Analytics and a Spark Pool in the Synapse workspace, an Azure Data Lake (Gen2) Storage Account, a Cosmos DB Account and an Azure Machine Learning Service into the Azure Subscription that you are using for this solution accelerator. 
 
 
 **Parameters**
@@ -32,58 +32,10 @@ Below are paramaters you will use to create the necessary resources for this sol
 2. Navigate to this folder `Resource Deployment\deployment\backend\`  
 3. Run the following command: 
     `./deployment_script.ps1`
+4. Follow the prompts. 
 
-### Step 2.1: Storage Account Permisions 
-In order to read files from your Azure Storage Account from the Synapse workspace, you will need to grant `Storage Blob Data Contributor`. Follow the steps below to assign Storage Blob Data Contributor to the users. 
-1. Go to the Azure Data Lake Storage Account created in Step 2
-2. Go to the `Access Control (IAM)` 
-3. Click "+ Add"
-4. Click "Add role assignment" 
-5. Now click the Role dropdown and select `Storage Blob Data Contributor` and search for your username and the other user's usernames to be added by using the search bar. 
-6. Click "Save" at the bottom 
-
-## Step 3: Upload Assets and Data to the Synapse Workspace  
-1. Launch the Synapse workspace:  
-    - Go to the resource page in the portal and click the "Launch Synapse Studio"
-2. Go to "Develop", click the "+", and click Import:  
-    - In the demo's repository, go to `Analytics Deployment\synapse-workspace\notebooks` to select all of the the Spark Notebooks  
-3. Click Publish and confirm the assets to be published  
-4. Go to the "Manage" tab in the Synapse workspace and click on the Apache Spark pools  
-5. Click on the Spark Pool that you deployed and click "Packages, then click "Upload environment config file"  
-    - Go to `Analytics Deployment\synapse-workspace\cluster_config` to get the requirements.txt for upload  
-6. Ensure that you give yourself and any other user admin privilages for this accelerator by going to the `Manage` tab, then `Access control` underneath `Security` and click "+ Add"
-    - ![Manage, Access Control](./imgs/manage_access_control.png)  
-7. Now click the Role dropdown and select all three roles, and search for your username and the other user's usernames to be added by using the search bar underneath the Role dropdown  
-    - ![Add Roles](./imgs/add_roles.png)  
-    - ![Add Users](./imgs/add_users.png)  
-8. Click Apply at the bottom of the window.  
-9. Now the environment should be ready to go for the execution of the scripts  
-  
-## Step 4: Setting Up the Cosmos DB and Azure Synapse Link  
-### Create Containers for Recommendations and Product Details  
-1. Go to the Cosmos DB service that was created in Step 2  
-
-2. Go to the Data Explorer and create a database named `product_data` with the configurations below  
-    - ![Add Database](./imgs/cdb_database.png)
-
-3. Underneath the database, create two containers with the following configurations  
-    - ![Add Container for Product Details](./imgs/cdb_prod_detail.png)  
-    - ![Add Container for User Recommendations](./imgs/cdb_user_recs.png) 
-
-4. Follow the directions [here](https://docs.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db#connect-an-azure-cosmos-db-database-to-a-synapse-workspace) to link your Cosmos DB to your Synapse workspace  
-    - **NOTE**: Make sure to create a Linked Service in the Synapse workspace for the Cosmos DB connection and name it `retail_ai_cosmos_synapse_link`  
-
-### Step 4.1: Upload Additional Dataset 
-We use the [`product_details.json`](../Analytics_Deployment/data/product_detail.json) to enhance the products served to the front-end with image information and cleaned up names.  
-
-1. Upload this JSON to the Azure Data Lake Storage Account attached to your Synapse workspace  
-    - Make sure you put it into the filesystem that is the Primary Filesystem for the Synapse workspace  
-    - Put it in the folder `synapse/workspaces` in the filesystem that is the primary filesystem for the Synapse workspace
-2. Import [`Analytics_Deployment\synapse-workspace\notebooks\01_CreateOrUpdateProductDetails.ipynb`](../Analytics_Deployment/synapse-workspace/notebooks/01_CreateOrUpdateProductDetails.ipynb) to the Synapse workspace and fill out the parameters for the filesystem name and the account name  
-3. Execute the Notebook  
-
-## Step 5: Running of the Notebooks and SQL Scripts  
-1. Go to the Azure Portal and deploy a Azure Machine Learning Services resource into the resource group that you are using for this Solution Accelerator.  
+### Deploy Azure Machine Learning
+1. Once the above script finishes, go to the Azure Portal and deploy a Azure Machine Learning Services resource into the resource group that you are using for this Solution Accelerator.  
     - You can search for `Machine Learning` after clicking on `Create a resource` to get the correct resource.  
     - **NOTE**: Along with the service comes the following:  
         - Azure Key Vault  
@@ -93,8 +45,7 @@ We use the [`product_details.json`](../Analytics_Deployment/data/product_detail.
             - You can find the name of the associated Container Registry in the resource page of the deployed Azure Machine Learning Service  
 
 2. Now you will need to create a Service Principal and give Contributor access to the Azure Machine Learning Service. Run the following commands in the Powershell: 
-- **Note**:Save the client-id and password of this Service Principal for future steps in the [Notebook](../Analytics_Deployment/synapse-workspace/notebooks/03_ALS_Model_Training.ipynb). This will install the Azure Machine Learning CLI Extention. 
-
+- **Note**: Save the client-id and password of this Service Principal for future steps in the [Notebook](../Analytics_Deployment/synapse-workspace/notebooks/03_ALS_Model_Training.ipynb). This will install the Azure Machine Learning CLI Extention. 
 
 ```sh 
 #After running the script, it will propt you to login to the portal or enter a device code. 
@@ -126,12 +77,73 @@ az ad sp show --id <client-id>
 az ml workspace share -w <workspace-name> -g <resource-group> --user <object-id> --role contributor
 ```
 
-3. Configure / Fill out the Parameters and then Run the following notebooks and scripts in order:  
+### Step 2.1: Storage Account Permisions 
+In order to read files from your Azure Storage Account from the Synapse workspace, you will need to grant `Storage Blob Data Contributor`. Follow the steps below to assign Storage Blob Data Contributor to the users. 
+1. Go to the Azure Data Lake Storage Account created in Step 2
+2. Go to the `Access Control (IAM)` 
+3. Click `+ Add`
+4. Click `Add role assignment` 
+5. Now click the Role dropdown and select `Storage Blob Data Contributor` and search for your username and the other user's usernames to be added by using the search bar. 
+6. Click `Save` at the bottom 
+ 
+## Step 3: Upload Assets and Data to the Synapse Workspace 
+### Step 3.1: Add IP address to Firewall
+Before you can upload any assests to the Synapse Workspace you will first need to add your IP address to the Synapse Workspace. 
+1. Go to the Synapse resouce you creaded in the previous step. 
+2. Navigate to `Firewalls` under `Security` on the left hand side of the page.
+3. At the top of the screen click `+ Add client IP`
+   - ![Update Firewalls](./imgs/firewall.png)  
+4. Your IP address should now be visable in the IP list. 
+
+### Step 3.2: Upload Assets
+1. Launch the Synapse workspace:  
+    - Go to the resource page in the portal and click the "Launch Synapse Studio"
+2. Go to `Develop`, click the `+`, and click Import:  
+    - In the demo's repository, go to `Analytics Deployment\synapse-workspace\notebooks` to select all of the the Spark Notebooks  
+3. Click Publish and confirm the assets to be published  
+4. Go to the `Manage` tab in the Synapse workspace and click on the `Apache Spark pools` 
+    - ![Spark Pool](./imgs/ManageSparkPool.png) 
+6. Click `...` on the deployed Spark Pool and select `Packages`
+7. Click `Upload` and select `requirements.txt` from the cloned repo. 
+    - Go to `Analytics Deployment\synapse-workspace\cluster_config` to get the requirements.txt file for upload
+8. Click `Apply` 
+    - ![Requirements File](./imgs/Requirements.png)
+
+## Step 4: Setting Up the Cosmos DB and Azure Synapse Link  
+### Create Containers for Recommendations and Product Details  
+1. Go to the Cosmos DB service that was created in Step 2  
+
+2. Go to the Data Explorer and create a database named `product_data` with the configurations below  
+    - ![Add Database](./imgs/cdb_database.png)
+
+3. Underneath the database, create two containers with the following configurations  
+    - ![Add Container for Product Details](./imgs/cdb_prod_detail.png)  
+    - ![Add Container for User Recommendations](./imgs/cdb_user_recs.png)
+    - **NOTE**: In order to turn on `Analytical store` you need to Enable `Azure Synapse Link`
+      -  ![Enable Link](./imgs/EnableLink.png)
+
+4. Next, link your Cosmos DB to your Synapse workspace. Follow the directions [here](https://docs.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db#connect-an-azure-cosmos-db-database-to-a-synapse-workspace)    
+    - **NOTE**: Make sure to create a Linked Service in the Synapse workspace for the Cosmos DB connection and name it `retail_ai_cosmos_synapse_link`  
+
+### Step 4.1: Upload Additional Dataset 
+We use the [`product_detail.json`](../Analytics_Deployment/data/product_detail.json) to enhance the products served to the front-end with image information and cleaned up names.  
+
+1. Upload this JSON to the Azure Data Lake Storage Account attached to your Synapse workspace
+    - This file is located `/Analytics_Deployment/data`   
+    - Make sure you put it into the filesystem that is the Primary Filesystem for the Synapse workspace  
+    - Put it in the folder `synapse/workspaces` in the filesystem that is the primary filesystem for the Synapse workspace
+2. Import [`Analytics_Deployment\synapse-workspace\notebooks\01_CreateOrUpdateProductDetails.ipynb`](../Analytics_Deployment/synapse-workspace/notebooks/01_CreateOrUpdateProductDetails.ipynb) to the Synapse workspace and fill out the parameters for the filesystem name and the account name  
+3. Execute the Notebook  
+
+## Step 5: Running of the Notebooks
+
+1. Configure / Fill out the Parameters and then Run the following notebook in order:  
+    - [`01_CreateOrUpdateProductDetails.ipynb`](../Analytics_Deployment/synapse-workspace/notebooks/01_CreateOrUpdateProductDetails.ipynb)
     - [`02_Clean_Training_Data.ipynb`](../Analytics_Deployment/synapse-workspace/notebooks/02_Clean_Training_Data.ipynb)  
     - [`03_ALS_Model_Training.ipynb`](../Analytics_Deployment/synapse-workspace/notebooks/03_ALS_Model_Training.ipynb)  
     - [`04_RecommendationRefresh.ipynb`](../Analytics_Deployment/synapse-workspace/notebooks/04_RecommendationRefresh.ipynb)
     
-4. After all of these have been run successfully, the recommendations will have been generated for the User-Based Recommendations, and the model will be ready for deployment for the Item-Based Recommender served on Azure Kubernetes Service.  
+2. After all of these have been run successfully, the recommendations will have been generated for the User-Based Recommendations, and the model will be ready for deployment for the Item-Based Recommender served on Azure Kubernetes Service.  
   
 ## Step 6: Set Up the Item-Based Recommendation Web Service  
 > In this section we will set up the Item-Based Recommendation Web Service by using Azure Machine Learning Service to package and deploy the model and Azure Kubernetes Service to host the model. 

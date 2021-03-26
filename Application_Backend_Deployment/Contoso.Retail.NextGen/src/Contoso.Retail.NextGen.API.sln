@@ -45,8 +45,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Retail.NextGen.Purc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Retail.NextGen.PurchaseHistory", "Contoso.Retail.NextGen.PurchaseHistory\Contoso.Retail.NextGen.PurchaseHistory.csproj", "{46B1F5FE-AB40-4A3F-8B38-58507289099D}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AAC5661A-AA4B-407E-B9B5-394373AC0155}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Retail.NextGen.RecommendationByItem.Tests", "Contoso.Retail.NextGen.RecommendationByItem.Tests\Contoso.Retail.NextGen.RecommendationByItem.Tests.csproj", "{DDBA25CE-4F36-4808-8AD4-25FDDEABE9B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{71B1B522-CB59-4190-BEB4-2EE9B717F503}"
@@ -122,10 +120,6 @@ Global
 		{46B1F5FE-AB40-4A3F-8B38-58507289099D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46B1F5FE-AB40-4A3F-8B38-58507289099D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46B1F5FE-AB40-4A3F-8B38-58507289099D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AAC5661A-AA4B-407E-B9B5-394373AC0155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AAC5661A-AA4B-407E-B9B5-394373AC0155}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AAC5661A-AA4B-407E-B9B5-394373AC0155}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AAC5661A-AA4B-407E-B9B5-394373AC0155}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DDBA25CE-4F36-4808-8AD4-25FDDEABE9B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DDBA25CE-4F36-4808-8AD4-25FDDEABE9B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDBA25CE-4F36-4808-8AD4-25FDDEABE9B5}.Release|Any CPU.ActiveCfg = Release|Any CPU

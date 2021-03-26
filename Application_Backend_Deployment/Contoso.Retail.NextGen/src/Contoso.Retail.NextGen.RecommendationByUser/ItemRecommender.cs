@@ -33,7 +33,7 @@ namespace Contoso.Retail.NextGen.RecommendationByUser
                 using (var httpClient = new HttpClient())
                 {
                     swaggerClient swaggerClient = new swaggerClient(productAPIServiceURL, httpClient);
-                    return await swaggerClient.GetProductsAsync(_recommendations[0].recommendations);
+                    return await swaggerClient.GetProductsAsync(_recommendations[0].product_ids);
                 }
 
             } else
