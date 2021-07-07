@@ -39,8 +39,6 @@ This is a [TypeScript](https://www.typescriptlang.org/) powered [React.js](https
             /** PRODUCT IMAGE STORAGE ACCOUNT NAME from Application_Backend_Deploymnet */ 
             export const STORAGE_ACCOUNT = "[ENTER STORAGE ACCOUNT NAME]"
 
-            /** POWER BI URL */
-            export const POWER_BI_URL = "[ENTER POWER BI NAME]"
 
 
 ## Demo Site:

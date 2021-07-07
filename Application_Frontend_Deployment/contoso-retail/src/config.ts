@@ -60,6 +60,3 @@ export const EVENT_HUB_ACCESS_KEY = "[ENTER ACCESS KEY]";
 
 /**Config Storage Account from Appliacation_Backend_Deployment */
 export const STORAGE_ACCOUNT = "[ENTER STORAGE ACCOUNT NAME]"
-
-/**Config Power BI Name */
-export const POWER_BI_URL = "[ENTER POWER BI NAME]"
