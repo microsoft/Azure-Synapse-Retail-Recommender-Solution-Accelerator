@@ -161,14 +161,14 @@ $connectionString = az cosmosdb keys list `
 
 ((Get-Content -path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.ProductManagement.Host\appsettings.json.temp -Raw) -replace '{connectionstring}', $connectionString) | Set-Content -Path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.ProductManagement.Host\appsettings.json
 ((Get-Content -path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.UserProfile.Host\appsettings.json.temp -Raw) -replace '{connectionstring}', $connectionString) | Set-Content -Path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.UserProfile.Host\appsettings.json
+((Get-Content -path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByUser.Host\appsettings.json.temp -Raw) -replace '{connectionstring}', $connectionString) | Set-Content -Path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByUser.Host\appsettings.json
+
 
 $connectionURL = $connectionString.split(";")[0].Replace("AccountEndpoint=", "")
 ((Get-Content -path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.PurchaseHistory.Host\appsettings.json.temp -Raw) -replace '{connectionURL}', $connectionURL) | Set-Content -Path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.PurchaseHistory.Host\appsettings.json
-((Get-Content -path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByUser.Host\appsettings.json.temp -Raw) -replace '{connectionURL}', $connectionURL) | Set-Content -Path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByUser.Host\appsettings.json
-
 $accessKey = $connectionString.split(";")[1].Replace("AccountKey=", "")
 ((Get-Content -path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.PurchaseHistory.Host\appsettings.json -Raw) -replace '{accessKey}', $accessKey) | Set-Content -Path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.PurchaseHistory.Host\appsettings.json
-((Get-Content -path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByUser.Host\appsettings.json -Raw) -replace '{accessKey}', $accessKey) | Set-Content -Path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByUser.Host\appsettings.json
+
 
 ((Get-Content -path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByItem.Host\appsettings.json.temp -Raw) -replace '{RecommendMLServiceURL}', $recommendMLServiceURL) | Set-Content -Path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByItem.Host\appsettings.json
 ((Get-Content -path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByItem.Host\appsettings.json -Raw) -replace '{RecommendMLServiceBearerToken}', $recommendMLServiceBearerToken) | Set-Content -Path .\Contoso.Retail.NextGen\src\Contoso.Retail.NextGen.RecommendationByItem.Host\appsettings.json

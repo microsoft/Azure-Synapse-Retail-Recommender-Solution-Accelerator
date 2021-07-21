@@ -1,10 +1,7 @@
 ﻿using Contoso.Test.MSTestV2;
-using Cosmonaut;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Contoso.Retail.NextGen.RecommendationByUser.Tests
@@ -15,19 +12,10 @@ namespace Contoso.Retail.NextGen.RecommendationByUser.Tests
         [TestMethod()]
         public async Task GetRecommendationTest()
         {
-            var serviceuri = Config["Values:CosmosCoreAPIUri"];
-            var accesskey = Config["Values:CosmosCoreAccessKey"];
-            var dbName = Config["Values:CosmosDatabaseName"];
+            var dbConnectionString = Config["Values:DBConnectionString"];
             var productAPIuri = Config["Values:ProductAPIServiceURL"];
 
-            var cosmosSettings = new CosmosStoreSettings(dbName,
-                   serviceuri,
-                   accesskey);
-
-
-            ICosmosStore<Models.Recommendations> recommendation = new CosmosStore<Models.Recommendations>(cosmosSettings);
-
-            var recommendationContext = new ItemRecommender(recommendation, productAPIuri);
+            var recommendationContext = new ItemRecommender(dbConnectionString, "product_data", productAPIuri);
 
             var items = await recommendationContext.GetRecommendation("568793129");
 

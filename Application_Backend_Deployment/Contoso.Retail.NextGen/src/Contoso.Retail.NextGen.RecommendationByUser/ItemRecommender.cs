@@ -1,44 +1,41 @@
 ﻿using Contoso.Retail.NextGen.RecommendationByUser.Models;
 using Contoso.Retail.NextGen.ProductManagement.Proxy;
-using Cosmonaut;
-using Cosmonaut.Extensions;
-using Cosmonaut.Testing;
-using Microsoft.Azure.Documents.Client;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
+
 using System.Threading.Tasks;
+using System;
+using Microsoft.Solutions.CosmosDB.SQL;
+using Microsoft.Solutions.CosmosDB;
+using System.Net.Http;
 
 namespace Contoso.Retail.NextGen.RecommendationByUser
 {
-    public class ItemRecommender
+    public class ItemRecommender : SQLEntityCollectionBase<user_recommendation, string>
     {
-        ICosmosStore<Models.Recommendations> _cosmosStore = null;
+        
         string productAPIServiceURL = null;
-        public ItemRecommender(ICosmosStore<Models.Recommendations> cosmosStore, string ProductAPIServiceURL)
+
+        public ItemRecommender(string DataConnectionString, string CollectionName, string ProductAPIServiceURL) : base(DataConnectionString, CollectionName, "user_recommendations")
         {
-            _cosmosStore = cosmosStore;
             productAPIServiceURL = ProductAPIServiceURL;
         }
 
         public async Task<IEnumerable<Product>> GetRecommendation(string UserID)
         {
-            var _recommendations = _cosmosStore.Query().Where(x => x.user_id == UserID).ToArray();
+            var _recommendations = await this.ObjectCollection.FindAsync(new GenericSpecification<user_recommendation>(x => x.user_id == int.Parse(UserID)));
             
-            if (_recommendations.Length > 0)
+            if (_recommendations.product_ids.Length > 0)
             {
                 using (var httpClient = new HttpClient())
                 {
                     swaggerClient swaggerClient = new swaggerClient(productAPIServiceURL, httpClient);
-                    return await swaggerClient.GetProductsAsync(_recommendations[0].product_ids);
+                    return await swaggerClient.GetProductsAsync(_recommendations.product_ids);
                 }
 
-            } else
+            }
+            else
             {
-                return new Product[] { }; 
+                return new Product[] { };
             }
         }
 

@@ -1,17 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Cosmonaut;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
 namespace Contoso.Retail.NextGen.RecommendationByUser.Host
@@ -50,20 +42,7 @@ namespace Contoso.Retail.NextGen.RecommendationByUser.Host
             });
 
             services.AddSwaggerGenNewtonsoftSupport();
-
-            services.AddSingleton<ICosmosStore<Models.Recommendations>, CosmosStore<Models.Recommendations>>(c => {
-                
-                var serviceuri = Configuration["Values:CosmosCoreAPIUri"];
-                var accesskey = Configuration["Values:CosmosCoreAccessKey"];
-                var dbName = Configuration["Values:CosmosDatabaseName"];
-
-                var cosmosSettings = new CosmosStoreSettings(dbName,
-                       serviceuri,
-                       accesskey);
-
-                return new CosmosStore<Models.Recommendations>(cosmosSettings);
-            });
-
+            services.AddTransient<ItemRecommender>(x => { return new ItemRecommender(Configuration["Values:DBConnectionString"], Configuration["Values:DatabaseName"], Configuration["Values:ProductAPIServiceURL"]); });
             
         }
 
