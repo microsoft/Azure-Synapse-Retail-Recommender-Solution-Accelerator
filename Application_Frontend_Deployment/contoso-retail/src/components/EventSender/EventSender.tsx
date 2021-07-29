@@ -20,8 +20,8 @@ class EventHubProcuder {
     private eventHubclient: EventHubLib.EventHubProducerClient;
 
     constructor() {
-        this.connectionString = `Endpoint = sb://${EVENT_HUB_NAMESPACE}.servicebus.windows.net/;SharedAccessKeyName=${EVENT_HUB_KEYNAME};SharedAccessKey=${EVENT_HUB_ACCESS_KEY};`;
-        this.eventHubName = "clickthorugh";
+        this.connectionString = `Endpoint=sb://${EVENT_HUB_NAMESPACE}.servicebus.windows.net/;SharedAccessKeyName=${EVENT_HUB_KEYNAME};SharedAccessKey=${EVENT_HUB_ACCESS_KEY};`
+        this.eventHubName = "clickthrough";
         this.eventHubclient = new EventHubLib.EventHubProducerClient(this.connectionString, this.eventHubName);
     }
 
