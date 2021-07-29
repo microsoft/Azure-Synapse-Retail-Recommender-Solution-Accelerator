@@ -29,7 +29,7 @@ import { ISessionData } from '../../interfaces/ISessionData';
 import UpdateCartCount from '../../helpers/UpdateCartCount';
 import SiteTheme from '../SiteTheme/SiteTheme';
 import UpdateTheme from '../../helpers/UpdateTheme';
-import BI from '../BI/BI';
+//import BI from '../BI/BI';
 
 interface IProps {
 }
@@ -157,7 +157,7 @@ class App extends React.Component<IProps, IState> {
               <Route path="/OrderDetail/:id" component={OrderDetail} />
               <Route path="/RecommendedForYou" component={()=> <Recommendations UsesVerticalLayout={true} />} />
               <Route path="/SiteTheme" component={SiteTheme} />
-              <Route path="/BI" component={BI} />
+              {/* <Route path="/BI" component={BI} /> */}
               <Route path='*' component={NotFound} />
             </Switch>
           </main>
