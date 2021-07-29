@@ -71,7 +71,7 @@ class ItemRecommendations extends React.Component<IProps, IState> {
       .then(function (parsedData: IProductItem[]) {
         // data here
         that.setState({
-          recommendedItems: parsedData,
+          recommendedItems: parsedData.filter((x) : x is IProductItem => x != null),
           IsLoaded: true
         })
       });
