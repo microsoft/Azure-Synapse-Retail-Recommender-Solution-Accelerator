@@ -73,12 +73,16 @@ class Recommendations extends React.Component<IProps, IState> {
       .then(function (response) {
         return response.json();
       })
+      .catch(function(error){
+        return [];
+      })
       .then(function (parsedData: IProductItem[]) {
         that.setState({
-          recommendedItems: parsedData,
+          recommendedItems: parsedData.filter((x) : x is IProductItem => x != null),
           IsLoaded: true
         });
-      });
+      })
+;
   }
 
   render() {
@@ -93,6 +97,7 @@ class Recommendations extends React.Component<IProps, IState> {
             wrap={this.props.UsesVerticalLayout}>
            {
     this.state.recommendedItems.map((item: IProductItem, index) => (
+      
       <Stack.Item 
         grow
         key={index}

@@ -24,7 +24,7 @@ namespace Contoso.Retail.NextGen.RecommendationByUser
         {
             var _recommendations = await this.ObjectCollection.FindAsync(new GenericSpecification<user_recommendation>(x => x.user_id == int.Parse(UserID)));
             
-            if (_recommendations.product_ids.Length > 0)
+            if (_recommendations != null && _recommendations.product_ids.Length > 0)
             {
                 using (var httpClient = new HttpClient())
                 {
