@@ -49,7 +49,7 @@ This folder contains the resources for exploring how the model was constructed.
 
 ## Our Live Demo: Check it out!
 Synapse/AI-Retail-Recommender:
-* [Retail Web Site](https://synapsefornextgenretail.azurewebsites.net/), you check running demo from here.
+* [Retail Web Site](https://delightful-water-0ac017a1e.azurestaticapps.net/), you check running demo from here.
 
 ## License
 Copyright (c) Microsoft Corporation
