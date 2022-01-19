@@ -2,7 +2,7 @@
 
 
 ## About this repository
-This accelerator was built to provide developers with all of the resources needed to quickly build an Retail Recommender Solution based on Azure Analytics Platform. 
+This accelerator was built to provide developers with all of the resources needed to quickly build an Retail Recommender Solution based on Azure. 
 
 
 
@@ -18,12 +18,13 @@ Optional
 1. Visual Studio Code
 
 ## Azure and Analytics Platform
-The directions provided for this repository assume fundemental working knowledge of Azure, Cosmos DB, Azure Machine Learning Services, and Azure Kubernetes.
+The directions provided for this repository assume fundemental working knowledge of Azure Cosmos DB, Azure Machine Learning Service, Azure Kubernetes Service.
 
 For additional training and support, please see:
  1. [Azure Synapse Analytics](https://azure.microsoft.com/en-us/services/synapse-analytics/)
- 2. [Azure Kubernetes Services](https://kubernetes.io/)  
- 3. [Azure Machine Learning Services](https://azure.microsoft.com/en-us/services/machine-learning/)
+ 2. [Azure Cosmos DB](https://aka.ms/cosmosdb)
+ 3. [Azure Kubernetes Services](https://kubernetes.io/)  
+ 4. [Azure Machine Learning Services](https://azure.microsoft.com/en-us/services/machine-learning/)
 ## Getting Started and Process Overview  
 1. Clone this repository and navigate to the root of the directory  
 2. Go to [Deployment guide](./Resource_Deployment/README.md) for the steps you need to take to deploy this solution  
