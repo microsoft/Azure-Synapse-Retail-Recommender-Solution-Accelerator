@@ -13,5 +13,5 @@ dependencies:
     - azureml-core
     - azureml-inference-server-http
     - azureml-telemetry
-    - docker<5.0.0 # this is the fix needed
+    - docker<5.0.0
     - azure-mgmt-authorization<1.0.0,>=0.40.0
