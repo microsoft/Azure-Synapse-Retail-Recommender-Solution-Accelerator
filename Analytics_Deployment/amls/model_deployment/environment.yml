@@ -1,0 +1,17 @@
+name: base
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.10
+  - pyspark
+  - pip:
+    - azureml-defaults
+    - azure-common
+    - azure-core
+    - azure-storage-file-datalake
+    - azureml-core
+    - azureml-inference-server-http
+    - azureml-telemetry
+    - docker<5.0.0 # this is the fix needed
+    - azure-mgmt-authorization<1.0.0,>=0.40.0
