@@ -8,9 +8,8 @@ products:
 - azure-cosmos-db
 ---
 
-# Retail Recommender Solution Accelerator 
 ![Retail Recommender Solution Accelerator](./Resource_Deployment/imgs/RetailRecommender.png)
-
+# Retail Recommender Solution Accelerator 
 
 This accelerator was built to provide developers with all of the resources needed to quickly build an Retail Recommender Solution based on Azure. 
 
