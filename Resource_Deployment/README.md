@@ -16,7 +16,7 @@ In this step you will deploy Azure Synapse Analytics and a Spark Pool in the Syn
 
 **Parameters**
 
-Below are paramaters you will use to create the necessary resources for this solution accelerator. 
+Below are parameters you will use to create the necessary resources for this solution accelerator. 
 - **Subscription**: Azure Subscription Id 
 - **Resource Group**: Name of the resource group to create 
 - **Resource Name**: a globally unique name for creating the resources (must be 3-10 characters)
@@ -48,7 +48,7 @@ Below are paramaters you will use to create the necessary resources for this sol
 - **Note**: Save the client-id and password of this Service Principal for future steps in the [Notebook](../Analytics_Deployment/synapse-workspace/notebooks/03_ALS_Model_Training.ipynb). This will install the Azure Machine Learning CLI Extention. 
 
 ```sh 
-#After running the script, it will propt you to login to the portal or enter a device code. 
+#After running the script, it will prompt you to login to the portal or enter a device code. 
 az login
 
 #Install the Azure Machine Learning CLI Extention 
@@ -57,11 +57,11 @@ az extension add -n azure-cli-ml
 # Set the subscription you will be using for this solution accelerator
 # NOTE: you will need to replace the following 
 # - <subscription-id>
-az account set --subscription <subsciption-id>
+az account set --subscription <subscription-id>
 
 # Create a Service Principal
 # NOTE: you will need to replace the following 
-# - <service-principal-name>: Desired name for the serive principal
+# - <service-principal-name>: Desired name for the service principal
 az ad sp create-for-rbac --sdk-auth --name <service-principal-name>
 
 # Get details of your service principal 
@@ -88,12 +88,12 @@ In order to read files from your Azure Storage Account from the Synapse workspac
  
 ## Step 3: Upload Assets and Data to the Synapse Workspace 
 ### Step 3.1: Add IP address to Firewall
-Before you can upload any assests to the Synapse Workspace you will first need to add your IP address to the Synapse Workspace. 
+Before you can upload any assets to the Synapse Workspace you will first need to add your IP address to the Synapse Workspace. 
 1. Go to the Synapse resouce you creaded in the previous step. 
 2. Navigate to `Firewalls` under `Security` on the left hand side of the page.
 3. At the top of the screen click `+ Add client IP`
    - ![Update Firewalls](./imgs/firewall.png)  
-4. Your IP address should now be visable in the IP list. 
+4. Your IP address should now be visible in the IP list. 
 
 ### Step 3.2: Upload Assets
 1. Launch the Synapse workspace:  
@@ -148,7 +148,7 @@ We use the [`product_detail.json`](../Analytics_Deployment/data/product_detail.j
 ## Step 6: Set Up the Item-Based Recommendation Web Service  
 > In this section we will set up the Item-Based Recommendation Web Service by using Azure Machine Learning Service to package and deploy the model and Azure Kubernetes Service to host the model. 
 
-> You will need Python 3.7+ installed on your local mahcine.  
+> You will need Python 3.7+ installed on your local machine.
  
 1. Launch the Azure Machine Learning Studio: 
     - Go to the resource page in the portal and click the "Launch Studio" 
@@ -208,7 +208,7 @@ We use the [`product_detail.json`](../Analytics_Deployment/data/product_detail.j
 2. In the Azure API Management, go to `APIs` and choose `Blank API` 
 4. Configure the name of your API and click Create  
 
-> Now you are ready to integrate the API with your front-end by utilizing the API you built in Azure API Managment.  
+> Now you are ready to integrate the API with your front-end by utilizing the API you built in Azure API Management.  
   
 #### Example Recommendation Call  
 
@@ -227,12 +227,12 @@ We use the [`product_detail.json`](../Analytics_Deployment/data/product_detail.j
     # Create Event Hub namespace 
 
     # NOTE: you will need to replace the following: 
-    # - <event-hub-namespace>, <resourse-group>, <location>
+    # - <event-hub-namespace>, <resource-group>, <location>
     az eventhubs namespace create --name <event-hub-namespace> --resource-group <resource-group> -l <location>
 
-    # Creat Event Hub called clickthrough
+    # Create Event Hub called clickthrough
 
-    # NOTE: you will need to replace the followng: 
+    # NOTE: you will need to replace the following: 
     # - <resource-group>, <event-hub-namespace>
     az eventhubs eventhub create --name clickthrough --resource-group <resource-group> --namespace-name <event-hub-namespace>
     ```
