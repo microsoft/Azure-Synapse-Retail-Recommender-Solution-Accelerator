@@ -57,9 +57,6 @@ This folder contains the resources for product details and managing the list of 
 ### [4. ML Model Building](./ML_Model_Building)
 This folder contains the resources for exploring how the model was constructed.
 
-## Our Live Demo: Check it out!
-Synapse/AI-Retail-Recommender:
-* [Retail Web Site](https://delightful-water-0ac017a1e.azurestaticapps.net/), you check running demo from here.
 
 ## License
 Copyright (c) Microsoft Corporation
