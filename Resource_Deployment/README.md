@@ -6,8 +6,8 @@ We are currently working on an automated deployment process for this solution ac
 We are using the data provided by [this Kaggle Open Dataset](https://www.kaggle.com/mkechinov/ecommerce-behavior-data-from-multi-category-store), and you will need to download the data to your local machine. You will need the following CSVs/Datasets (download them):  
     - 2019-Oct.csv  
     - 2019-Nov.csv  
-    - 2019-Dec.csv.gz (available [here](https://drive.google.com/drive/folders/1Nan8X33H8xrXS5XhCKZmSpClFTCJsSpE))   
-    - 2020-Jan.csv.gz (available [here](https://drive.google.com/drive/folders/1Nan8X33H8xrXS5XhCKZmSpClFTCJsSpE))  
+    - 2019-Dec.csv 
+    - 2020-Jan.csv
 
 
 ## Step 2: Create Azure Synapse Analytics
