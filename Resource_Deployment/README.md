@@ -6,7 +6,7 @@ We are currently working on an automated deployment process for this solution ac
 We are using the data provided by [this Kaggle Open Dataset](https://www.kaggle.com/mkechinov/ecommerce-behavior-data-from-multi-category-store), and you will need to download the data to your local machine. You will need the following CSVs/Datasets (download them):  
     - 2019-Oct.csv  
     - 2019-Nov.csv  
-    - 2019-Dec.csv 
+    - 2019-Dec.csv  
     - 2020-Jan.csv
 
 
