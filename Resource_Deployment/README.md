@@ -35,7 +35,7 @@ Below are paramaters you will use to create the necessary resources for this sol
 4. Follow the prompts. 
 
 ### Deploy Azure Machine Learning
-1. Once the above script finishes, go to the Azure Portal and deploy a Azure Machine Learning Services resource into the resource group that you are using for this Solution Accelerator.  
+1. Once the above script finishes, go to the Azure Portal and deploy an Azure Machine Learning Services resource into the resource group that you are using for this Solution Accelerator.  
     - You can search for `Machine Learning` after clicking on `Create a resource` to get the correct resource.  
     - **NOTE**: Along with the service comes the following:  
         - Azure Key Vault  
